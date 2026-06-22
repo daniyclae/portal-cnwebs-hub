@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>专题 · 世界杯指南</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f7f5f2;
+      font-family: 'Georgia', 'Times New Roman', '宋体', serif;
+      color: #2c2b28;
+      line-height: 1.7;
+    }
+
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* hero 横幅 —— 极简留白 + 窄幅 */
+    .hero {
+      padding: 80px 0 40px;
+      border-bottom: 1px solid #dcd8d0;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: #1f1e1b;
+      margin-bottom: 12px;
+    }
+
+    .hero .sub {
+      font-size: 1rem;
+      color: #6b6761;
+      border-left: 2px solid #b8aa9a;
+      padding-left: 18px;
+      margin-top: 4px;
+    }
+
+    .hero .sub span {
+      font-style: italic;
+    }
+
+    /* 背景说明卡 */
+    .backdrop {
+      margin: 48px 0 36px;
+      background: #efece7;
+      padding: 32px 28px;
+      border-radius: 0;
+      box-shadow: none;
+      border: 1px solid #ddd7ce;
+    }
+
+    .backdrop h2 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+
+    .backdrop p {
+      font-size: 0.95rem;
+      color: #3b3935;
+    }
+
+    /* 三段自然介绍 */
+    .intro-grid {
+      margin: 40px 0 32px;
+    }
+
+    .section-item {
+      margin-bottom: 36px;
+    }
+
+    .section-item h3 {
+      font-size: 1.15rem;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      color: #2d2a25;
+      border-bottom: 1px dashed #ccc6bc;
+      padding-bottom: 6px;
+      margin-bottom: 14px;
+      display: inline-block;
+    }
+
+    .section-item p {
+      font-size: 0.95rem;
+      color: #3f3c37;
+    }
+
+    .section-item p + p {
+      margin-top: 12px;
+    }
+
+    /* 特点 / 场景小清单 以段落形式出现 */
+    .note-list {
+      margin: 18px 0 10px;
+      padding-left: 22px;
+      list-style: none;
+    }
+
+    .note-list li {
+      position: relative;
+      margin-bottom: 8px;
+      font-size: 0.93rem;
+      color: #44413b;
+    }
+
+    .note-list li::before {
+      content: "·";
+      position: absolute;
+      left: -14px;
+      color: #a69987;
+      font-weight: bold;
+    }
+
+    /* FAQ 摘要 */
+    .faq-tiny {
+      margin: 44px 0 32px;
+      padding: 24px 0;
+      border-top: 1px solid #d2ccc2;
+      border-bottom: 1px solid #d2ccc2;
+    }
+
+    .faq-tiny h4 {
+      font-weight: 400;
+      font-size: 1.05rem;
+      margin-bottom: 18px;
+      color: #2b2823;
+    }
+
+    .faq-item {
+      margin-bottom: 16px;
+    }
+
+    .faq-item strong {
+      font-weight: 400;
+      display: block;
+      font-size: 0.95rem;
+      margin-bottom: 3px;
+      color: #3b3730;
+    }
+
+    .faq-item p {
+      font-size: 0.9rem;
+      color: #56524b;
+      margin-left: 12px;
+    }
+
+    /* 页尾访问提示 */
+    .footer-note {
+      margin: 56px 0 64px;
+      text-align: left;
+      font-size: 0.95rem;
+      border-left: 3px solid #b0a08b;
+      padding-left: 20px;
+      color: #3f3b35;
+    }
+
+    .footer-note a {
+      color: #3b352b;
+      text-decoration: none;
+      border-bottom: 1px solid #a0917c;
+      transition: border-color 0.15s;
+    }
+
+    .footer-note a:hover {
+      border-color: #1e1b16;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e2dbd2;
+      margin: 24px 0;
+    }
+
+    /* 响应式 */
+    @media (max-width: 500px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .backdrop {
+        padding: 24px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- hero 横幅 -->
+  <div class="hero">
+    <h1>世界杯·简明指南</h1>
+    <div class="sub"><span>专题</span> ｜ 从赛程到现场，一份安静的备忘录</div>
+  </div>
+
+  <!-- 背景说明 -->
+  <div class="backdrop">
+    <h2>关于这个专题</h2>
+    <p>
+      四年一度的赛事早已超越竞技本身，成为不同文化交汇的临时聚场。无论是初次观看还是多年关注，赛前赛后总有一些信息值得被重新梳理。<br>
+      我们不堆砌数据，只围绕「如何观看、如何理解、如何参与」给出克制的叙述——希望这些文字像一张折好的地图，在需要时帮你定位。
+    </p>
+  </div>
+
+  <!-- 三段自然介绍 -->
+  <div class="intro-grid">
+
+    <div class="section-item">
+      <h3>比赛日程与节奏</h3>
+      <p>
+        小组赛通常横跨十二天，每天三到四场对决。淘汰赛阶段间隙缩短，强队之间容错率极低。如果你只有零散时间，建议优先关注每天晚间两场焦点战——多数经典对局发生在这个时段。
+      </p>
+      <p>
+        另外，时差是需要预先适应的变量。比赛城市所在时区与北京相差五到十一小时不等，凌晨三点的淘汰赛并不少见。提前规划观赛时间，比临时熬夜更从容。
+      </p>
+    </div>
+
+    <div class="section-item">
+      <h3>现场观赛的实用细节</h3>
+      <p>
+        如果你计划前往举办城市，以下几条或许值得放入备忘录：球场通常要求提前两小时入场安检，背包尺寸有限制；当地交通在比赛日会增设临时专线，但散场后打车往往需要排队四十分钟以上。
+      </p>
+      <p>
+        另外，主办方官方票务平台是唯一的二手票转售渠道，私下交易存在较高风险。球场内饮食多以当地简餐为主，部分场馆只接受非接触支付。
+      </p>
+      <ul class="note-list">
+        <li>建议随身携带护照或复印件（部分场馆核验严格）</li>
+        <li>下载当地离线地图和翻译应用</li>
+        <li>提前了解球场禁带物品清单</li>
+      </ul>
+    </div>
+
+    <div class="section-item">
+      <h3>观赛之外的文化切片</h3>
+      <p>
+        世界杯举办城市往往临时搭建许多球迷区，大屏幕直播、街头音乐、本地小吃摊位混在一起，氛围甚至比球场内更松弛。你可以不持有任何一场门票，却在广场上遇见来自十几个国家的陌生人，一起为一脚远射欢呼。
+      </p>
+      <p>
+        这种时刻提醒我们，赛事真正的遗产不在奖杯上，而在那些短暂却真实的相遇里。
+      </p>
+    </div>
+  </div>
+
+  <!-- FAQ 摘要（轻量） -->
+  <div class="faq-tiny">
+    <h4>几个常见问题的简短回应</h4>
+    <div class="faq-item">
+      <strong>从哪里获取官方赛程更新？</strong>
+      <p>主办方官网通常提前六个月发布完整赛历，第三方体育平台也会同步。但注意核对时区转换。</p>
+    </div>
+    <div class="faq-item">
+      <strong>没有门票可以在城市里感受气氛吗？</strong>
+      <p>可以。国际足联官方球迷节以及各城市公共观赛区大多免费开放，只需提前查看开放时间与容量限制。</p>
+    </div>
+    <div class="faq-item">
+      <strong>第一次去现场需要注意什么？</strong>
+      <p>除了常规旅行准备，建议单独列一份赛事相关清单：球场位置、比赛日交通管制、当地紧急求助号码等。</p>
+    </div>
+  </div>
+
+  <!-- 页尾访问提示（嵌入链接） -->
+  <div class="footer-note">
+    <p>
+      如果你需要更系统的信息集合，可以访问 <a href="https://portal-cnwebs-shijiebei.com">世界杯</a> 专题页面，那里整理了赛事背景、举办城市档案与官方资源索引。内容保持了类似的叙述节奏，不急于罗列，只求清晰。
+    </p>
+    <p style="margin-top: 16px; color: #6d6860; font-size: 0.85rem;">
+      希望这份指南能成为你观看旅途中的一处安静路标。
+    </p>
+  </div>
+
+  <hr>
+  <p style="text-align: left; font-size: 0.75rem; color: #9b948b; margin-bottom: 40px;">
+    · 杂志式专题 · 世界杯简明指南
+  </p>
+</div>
+
+</body>
+</html>
